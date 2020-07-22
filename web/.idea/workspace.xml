@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b9b2850-ec16-416f-b51b-833fbf086601" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SrqSvJoO02nRBGxcVwBsmE5qIe" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\images\logo" />
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\abc\boighor" />
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\images" />
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\images\books" />
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\images\others" />
+      <recent name="C:\Users\Admin\WebstormProjects\boighor\images\product" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b9b2850-ec16-416f-b51b-833fbf086601" name="Default Changelist" comment="" />
+      <created>1572332065121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572332065121</updated>
+      <workItem from="1572332066805" duration="1826000" />
+      <workItem from="1572345178377" duration="19000" />
+      <workItem from="1572692639990" duration="48000" />
+      <workItem from="1572692848679" duration="7664000" />
+      <workItem from="1572775906825" duration="6167000" />
+      <workItem from="1572803886964" duration="9084000" />
+      <workItem from="1572876007633" duration="3191000" />
+      <workItem from="1572931760374" duration="7078000" />
+      <workItem from="1572941351293" duration="22699000" />
+      <workItem from="1573103659170" duration="1672000" />
+      <workItem from="1573195679875" duration="4932000" />
+      <workItem from="1573206448905" duration="7137000" />
+      <workItem from="1573394258668" duration="4365000" />
+      <workItem from="1573490126483" duration="569000" />
+      <workItem from="1573528565262" duration="4771000" />
+      <workItem from="1573556881558" duration="223000" />
+      <workItem from="1573565191332" duration="2904000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
