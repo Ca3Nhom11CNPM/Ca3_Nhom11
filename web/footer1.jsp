@@ -39,7 +39,7 @@
                             <a href="index1.jsp">
 
                                 <img class="f" src="images1/nobitavn-103639.jpg" height="140" width="350"/></a>
-                            <p>© 2019 - Bản quyền của Công ty TNHH Neta Việt Nam – www.Nobita.vn</p><br>
+                            <p>© 2019 - Bản quyền của nhóm 11 – www.Nobita.vn</p><br>
                             Giấy chứng nhận Đăng ký Kinh doanh số 0315442805 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 19/12/2018</p>
                         </div>
                         <div class="footer__content">
@@ -50,7 +50,7 @@
                                 <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
                                 <li><a href="#"><i class="bi bi-youtube"></i></a></li>
                             </ul>
-                            <p>Copyright    <i class="fa fa-copyright"></i> 2014<a href="index1.jsp"> Nobita.vn</a></p>
+                            <p>Copyright    <i class="fa fa-copyright"></i> 2020<a href="index1.jsp"> Nobita.vn</a></p>
                         </div>
                     </div>
                 </div>
