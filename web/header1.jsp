@@ -41,22 +41,30 @@
             <div class = "menu-list">
                 <ul id = "menu-content" class = "menu-content collapse">
                     <li class = "active"><a href = "index1.jsp"><i class="fas fa-globe-americas" style="font-size: 17px"></i> Tổng quan</a></li>
-
                     <li data-toggle = "collapse" data-target = "#product" class = "collapsed">
                         <a href = "<%=Util.fullPath("Listsanpham")%>"><i class="fas fa-cookie" style="font-size: 17px"></i>  Sản phẩm<span class = "caret"></span></a>
                     </li>
                     <ul class = "sub-menu " id = "product">
+<%--                        Use case quản lý sản phẩm--%>
 
                         <li><a href = "<%=Util.fullPath("Listsanpham")%>"><span class = "fas fa-folder-open" aria-hidden = "">&nbsp;</span>Quản lý sản phẩm</a></li>
+    <%--                        Use case quản lý danh mục--%>
+
                         <li><a href = "<%=Util.fullPath("Listdanhmuc")%>"><i class="fas fa-folder-open"></i>Quản  lý danh mục</a></li>
+    <%--                        Use case quản lý nhà xuất bản--%>
+    
                         <li><a href = "<%=Util.fullPath("ListNXB")%>"><i class="fas fa-folder-open"></i> Quản lý nhà xuất bản</a></li>
                     </ul>
+                    <%--                        Use case quản lý hóa đơn(đơn hàng)--%>
+                    
                     <li data-toggle = "collapse" data-target = "#media" class = "collapsed">
                         <a href = "<%=Util.fullPath("Quanlydonhang")%>"><i class="fas fa-file-invoice" style="font-size: 17px"></i>Quản lý đơn hàng<span class = ""></span></a>
                     </li>
-                    <li><a href = "<%=Util.fullPath("ListQuanTriVien")%>"><i class="fas fa-users" style="font-size: 17px" ></i>  Quản lý người dùng</a>
+                    <%--                        Use case quản lý người dùng--%>
+                    
+                    <li>
+                        <a href = "<%=Util.fullPath("ListQuanTriVien")%>"><i class="fas fa-users" style="font-size: 17px" ></i>  Quản lý người dùng</a>
                     </li>
-
                 </ul>
             </div>
         </div>
