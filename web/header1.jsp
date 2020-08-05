@@ -32,29 +32,30 @@
 <body>
     <header>
         <div class = "nav-side-menu">
-            <div class = "brand"><a href = "#"><img class = "img-responsive margin0auto" src="images1/nobitavn-103639.jpg" height="343" width="800"/></a></div>
+            <div class = "brand">
+                <a href = "index1.jsp">
+                    <img class = "img-responsive margin0auto" src="images1/nobitavn-103639.jpg" height="343" width="800"/>
+                </a>
+            </div>
             <div class = "toggle-btn" data-toggle = "collapse" data-target = "#menu-content"></div>
             <div class = "menu-list">
                 <ul id = "menu-content" class = "menu-content collapse">
                     <li class = "active"><a href = "index1.jsp"><i class="fas fa-globe-americas" style="font-size: 17px"></i> Tổng quan</a></li>
 
                     <li data-toggle = "collapse" data-target = "#product" class = "collapsed">
-                        <a href = "#"><i class="fas fa-cookie" style="font-size: 17px"></i>  Sản phẩm<span class = "caret"></span></a>
+                        <a href = "<%=Util.fullPath("Listsanpham")%>"><i class="fas fa-cookie" style="font-size: 17px"></i>  Sản phẩm<span class = "caret"></span></a>
                     </li>
-                    <ul class = "sub-menu collapse" id = "product">
-                        <li><a href = "<%=Util.fullPath("Listsanpham")%>"><span class = "glyphicon glyphicon-paperclip" aria-hidden = "true">&nbsp;</span>Tất cả sản phẩm</a></li>
-                        <li><a href = "<%=Util.fullPath("Listdanhmuc")%>"><i class="fas fa-folder-open"></i> Danh mục sản phẩm</a></li>
+                    <ul class = "sub-menu " id = "product">
+
+                        <li><a href = "<%=Util.fullPath("Listsanpham")%>"><span class = "fas fa-folder-open" aria-hidden = "">&nbsp;</span>Quản lý sản phẩm</a></li>
+                        <li><a href = "<%=Util.fullPath("Listdanhmuc")%>"><i class="fas fa-folder-open"></i>Quản  lý danh mục</a></li>
                         <li><a href = "<%=Util.fullPath("ListNXB")%>"><i class="fas fa-folder-open"></i> Quản lý nhà xuất bản</a></li>
                     </ul>
                     <li data-toggle = "collapse" data-target = "#media" class = "collapsed">
-                        <a href = "#"><i class="fas fa-file-invoice" style="font-size: 17px"></i>  Đơn hàng<span class = "caret"></span></a>
+                        <a href = "<%=Util.fullPath("Quanlydonhang")%>"><i class="fas fa-file-invoice" style="font-size: 17px"></i>Quản lý đơn hàng<span class = ""></span></a>
                     </li>
-                    <ul class = "sub-menu collapse" id = "media">
-                        <li><a href = "<%=Util.fullPath("Quanlydonhang")%>"><i class="fas fa-copy" style="font-size: 17px"></i>  Quản lý đơn hàng</a></li>
-
-                    </ul>
-<%--                    <li><a href = "<%=Util.fullPath("ListKhachHang")%>"><i class="fas fa-heartbeat" style="font-size: 17px"></i>  Khách hàng</a></li>--%>
-                    <li><a href = "<%=Util.fullPath("ListQuanTriVien")%>"><i class="fas fa-users" style="font-size: 17px" ></i>  Quản lý người dùng</a></li>
+                    <li><a href = "<%=Util.fullPath("ListQuanTriVien")%>"><i class="fas fa-users" style="font-size: 17px" ></i>  Quản lý người dùng</a>
+                    </li>
 
                 </ul>
             </div>
