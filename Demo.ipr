@@ -11,6 +11,7 @@
           </element>
           <element id="directory" name="lib">
             <element id="library" level="project" name="lib" />
+            <element id="library" level="application" name="lib" />
           </element>
         </element>
       </root>
@@ -151,6 +152,9 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="13" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+  </component>
   <component name="WebContextManager">
     <option name="state">
       <map>
@@ -165,12 +169,9 @@
       <SOURCES />
     </library>
     <library name="lib">
-      <CLASSES>
-        <root url="file://$USER_HOME$/Downloads/java/apache-tomcat-9.0.34/lib" />
-      </CLASSES>
+      <CLASSES />
       <JAVADOC />
       <SOURCES />
-      <jarDirectory url="file://$USER_HOME$/Downloads/java/apache-tomcat-9.0.34/lib" recursive="false" />
     </library>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.controller;
+package vn.edu.nlu.fit.XemSPtheoDmục;
 
 import vn.edu.nlu.fit.DB.DBConnect;
 

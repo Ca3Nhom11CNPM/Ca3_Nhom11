@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.Admin;
+package vn.edu.nlu.fit.QuanLySanPham;
 
 import vn.edu.nlu.fit.DB.DBConnect;
 

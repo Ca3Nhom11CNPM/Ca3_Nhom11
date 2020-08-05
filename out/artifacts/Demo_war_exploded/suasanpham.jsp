@@ -14,8 +14,6 @@
     <meta name="keywords" content="" />
     <meta name="copyright" content="" />
     <title>Quản trị hệ thống</title>
-
-    <!--		<link rel="shortcut icon" type="image/x-icon" href="images1/icon-logo.png" />-->
     <link href="css1/bootstrap.min1.css" rel="stylesheet" />
     <link href="css1/layout1.css" rel="stylesheet" />
 
@@ -31,7 +29,9 @@
 </head>
 <body>
 <div class = "container-fluid padding0">
+<%--    phần header--%>
     <jsp:include page="header1.jsp"></jsp:include>
+
     <div id = "main">
         <nav class = "navbar navbar-default">
             <ul class = "nav navbar-nav navbar-right">
@@ -46,6 +46,7 @@
                 </li>
             </ul>
         </nav>
+<%--        hiện thực use case sửa sản phẩm--%>
         <h1>Sửa sản phẩm</h1>
         <div id = "sub-main">
             <div class = "row">
@@ -70,7 +71,7 @@
                     %>
                     <form class = "form-horizontal">
                         <div class = "form-group">
-                            <p class="matkhau">Ma sản phẩm</p>
+                            <p class="matkhau">Mã sản phẩm</p>
                             <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <input type = "text" class = "form-tensp" name="id" value="<%=rs.getInt(1)%>">
                             </div>
@@ -178,7 +179,6 @@
                             <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <button type="submit" class = "btn btn-danger btn-lg btn-a">
                                  Cập nhật dữ liệu
-                                    <!--									<a href = "#">Thoát</a>-->
                                 </button>
                             </div>
                         </div>

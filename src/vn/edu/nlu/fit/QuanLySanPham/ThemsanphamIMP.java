@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.Admin;
+package vn.edu.nlu.fit.QuanLySanPham;
 
 import vn.edu.nlu.fit.DB.DBConnect;
 
@@ -36,7 +36,7 @@ public class ThemsanphamIMP implements Quanlysanpham {
             cons.close();
 
         } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(ThemdanhmucIMP.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ThemsanphamIMP.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -67,7 +67,7 @@ public class ThemsanphamIMP implements Quanlysanpham {
             cons.close();
 
         } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(ThemdanhmucIMP.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ThemsanphamIMP.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

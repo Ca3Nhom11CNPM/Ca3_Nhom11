@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.controller;
+package vn.edu.nlu.fit.XemChiTietSP;
 
 import vn.edu.nlu.fit.DB.DBConnect;
 
@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-@WebServlet("/Chitietsanpham1")
+@WebServlet("/Chitietsanpham")
 public class Chitietsanpham1 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");

@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.Admin;
+package vn.edu.nlu.fit.QuanLySanPham;
 
 public interface Quanlysanpham {
     public void themTaiKhoan(Sanpham user);
