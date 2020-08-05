@@ -1,4 +1,4 @@
-﻿<%@ page import="vn.edu.nlu.fit.Utill.Util" %>
+<%@ page import="vn.edu.nlu.fit.Utill.Util" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="vi">
@@ -30,6 +30,7 @@
 </head>
 <body>
 <div class = "container-fluid padding0">
+<%--	phần header--%>
 	<jsp:include page="header1.jsp"></jsp:include>
 	<div id = "main">
 		<nav class = "navbar navbar-default">
@@ -45,6 +46,7 @@
 				</li>
 			</ul>
 		</nav>
+<%--		hiện thực use case thêm sản phẩm--%>
 		<h1>Thêm sản phẩm</h1>
 		<div id = "sub-main">
 			<div class = "row">
@@ -90,7 +92,7 @@
 							</div>
 						</div>
 						<div class = "form-group">
-							<p class="ht">Số lượng</p>2
+							<p class="ht">Số lượng</p>
 							<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<input type = "text" class = "form-giaban" name="quatity">
 							</div>
@@ -168,17 +170,10 @@
 								<input style="margin-left: 120px" type = "text" class = "form-khuyenmai" name="active" >
 							</div>
 						</div>
-
-
-
-
 						<div class = "form-group space-top">
 							<label class = "col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label"></label>
 							<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
 									<button class = "btn btn-danger btn-lg btn-a" type="submit">Thêm dữ liệu</button>
-<!--									<a href = "#">Thoát</a>-->
-
 							</div>
 						</div>
 					</form>
