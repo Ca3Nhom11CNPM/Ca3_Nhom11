@@ -25,19 +25,19 @@ public class Chitietsanpham1 extends HttpServlet {
             request.setAttribute("rs",rs);
 
 
-
+               //lấy thông tin chi tiết sản phẩm
             sql= "SELECT id,name,price,img,congty,tacgia,ngayxuatban,kichthuoc,nxb,loaibia,sotrang,masp,des FROM product where active =2";
             PreparedStatement s2 = DBConnect.getPrepareStatement(sql);
             if(id != null) sql += " and id=" + id;
             ResultSet p1= s2.executeQuery(sql);
             request.setAttribute("p1",p1);
 
-
+            //lấy thông tin chi tiết sản phẩm thuộc thể loại sản phẩm nổi bật(type=1)
             sql= "SELECT id,name,price,img,congty,tacgia,ngayxuatban,kichthuoc,nxb,loaibia,sotrang,masp,des FROM product WHERE active=2 and type=1";
             PreparedStatement s22 = DBConnect.getPrepareStatement(sql);
             ResultSet p2= s22.executeQuery(sql);
             request.setAttribute("p2",p2);
-
+            //thông tin được chuyển hướng đến trang slide1.jsp
             request.getRequestDispatcher("slide1.jsp").forward(request,response);
 
         } catch (ClassNotFoundException | SQLException e) {
