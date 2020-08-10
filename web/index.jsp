@@ -104,39 +104,7 @@
 
 						</div>
 					</div>
-<%--					<div class="carousel-inner">--%>
-<%--						<%--%>
-<%--							ResultSet sl = (ResultSet) request.getAttribute("sl");--%>
-<%--							while (sl.next()){--%>
 
-<%--						%>--%>
-<%--						<div class="carousel-item active">--%>
-<%--							<div class="d-none d-lg-block">--%>
-<%--								<div class="slide-box" >--%>
-<%--									<a href="slide2.jsp"><img class="hi" src="<%=sl.getString(2)%>" style="margin-left: 35px" width="1100px" height="450px"--%>
-<%--															  /></a>--%>
-<%--								</div>--%>
-<%--							</div>--%>
-
-<%--						</div>--%>
-<%--						<% } %>--%>
-
-
-<%--						<%--%>
-<%--							ResultSet sl1 = (ResultSet) request.getAttribute("sl1");--%>
-<%--							while (sl1.next()){--%>
-
-<%--						%>--%>
-<%--						<div class="carousel-item active">--%>
-<%--							<div class="d-none d-lg-block">--%>
-<%--								<div class="slide-box">--%>
-<%--									<a href="slide2.html">  <img class="hi" src="<%=sl1.getString(2)%>" style="margin-left: 35px" width="1100px" height="450px" /></a>--%>
-<%--								</div>--%>
-<%--							</div>--%>
-
-<%--						</div>--%>
-<%--						<% } %>--%>
-<%--					</div>--%>
 
 					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 						<i class="fa fa-chevron-left"></i>

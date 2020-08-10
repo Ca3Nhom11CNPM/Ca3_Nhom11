@@ -13,29 +13,26 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicons -->
+
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/icon.png">
 
-	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Cusom css -->
    <link rel="stylesheet" href="css/custom.css">
 
-	<!-- Modernizer js -->
+
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
 	<!--	Font awesome-->
 	<script src="https://kit.fontawesome.com/c25baca2b9.js" crossorigin="anonymous"></script>
 
 </head>
+<%--Thiết kế cho phân trang--%>
 <style>
 	.pagination{
 		display: inline-block;
@@ -77,17 +74,15 @@
 
 </style>
 <body>
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
 
-	<!-- Main wrapper -->
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+
+
+
 	<div class="wrapper" id="wrapper">
-		
-		<!-- Header -->
+
         <jsp:include page="header.jsp"></jsp:include>
-		<!-- //Header -->
-		<!-- Start Search Popup -->
+
 		<div class="box-search-content search_active block-bg close__top">
 			<form id="search_mini_form" class="minisearch" action="#">
 				<div class="field__search">
@@ -101,8 +96,6 @@
 				<span>close</span>
 			</div>
 		</div>
-		<!-- End Search Popup -->
-        <!-- Start Bradcaump area -->
         <div class="ht__bradcaump__area ">
             <div class="container">
                 <div class="row">
@@ -118,8 +111,7 @@
                 </div>
             </div>
         </div>
-        <!-- End Bradcaump area -->
-        <!-- Start Shop Page -->
+
         <div class="page-shop-sidebar left--sidebar bg--white section-padding--lg">
         	<div class="container">
         		<div class="row">
@@ -138,7 +130,6 @@
 									<% } %>
         						</ul>
         					</aside>
-
         					<aside class="wedget__categories poroduct--tag">
         						<h3 class="wedget__title">Product Tags</h3>
         						<ul>
@@ -195,7 +186,8 @@
         					</div>
         				</div>
         				<div class="tab__container">
-
+							<!-- Bước 6: Hiển thị danh mục sách -->
+<%--						<!--	Xem sản phẩm theo chiều ngang--%>
 	        				<div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
 								<ul class="myPages ">
 
@@ -205,7 +197,6 @@
 										while (p.next()){
 
 									%>
-	        						<!-- Start Single Product -->
 		        					<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 
 			        					<div class="product__thumb">
@@ -347,7 +338,7 @@
 								</div>
 	        				</div>
 
-
+<%--							Xem sản phẩm theo chiều dọc--%>
 
 	        				<div class="shop-grid tab-pane fade" id="nav-list" role="tabpanel">
 								<ul class="myPages1">
@@ -359,7 +350,7 @@
 	        					<div class="list__view__wrapper" style="margin-bottom: 100px">
 
 
-	        						<!-- Start Single Product -->
+
 	        						<div class="list__view">
 	        							<div class="thumb">
 	        								<a class="first__img" href="<%=Util.fullPath("Chitietsanpham3?id="+p3.getInt(1))%>"><img src="<%=p3.getString(4)%>"></a>
@@ -390,7 +381,6 @@
 
 
 
-	        						<!-- End Single Product -->
 	        					</div>
 									<% } %>
 								</ul>
@@ -430,6 +420,8 @@
 									</div></div>
 									<% } %>
 								</ul>
+
+
 								<ul class="myPages1">
 									<%
 										ResultSet p5 = (ResultSet) request.getAttribute("p5");
@@ -466,6 +458,8 @@
 										</div></div>
 									<% } %>
 								</ul>
+
+<%--								Phân trang--%>
 								<div class="pagination">
 									<a id="pre1" onclick="plusPag1(-1)" title="Trước"><i class="fas fa-chevron-left"></i></a>
 									<a class="actived1" onclick="currentPag1(1)" title="1">1</a>
@@ -480,13 +474,9 @@
         		</div>
         	</div>
         </div>
-        <!-- End Shop Page -->
-		<!-- Footer Area -->
+
         <jsp:include page="footer.jsp"></jsp:include>
-		<!-- //Footer Area -->
-<!--        &lt;!&ndash; QUICKVIEW PRODUCT &ndash;&gt;-->
-<!--        ơdiv id="quickview-wrapper">-->
-            <!-- Modal -->
+
             <div class="modal fade" id="productmodal" tabindex="-1" role="dialog"   style="width: 700px;height: 800px ;margin-left: 350px">
                 <div class="modal-dialog modal__container" role="document">
                     <div class="modal-content">
@@ -495,14 +485,14 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-product">
-                                <!-- Start product images -->
+
                                 <div class="product-images">
                                     <div class="main-image images"><img src="images/books/347787_p88740mscan0001.jpg"
                                                                         height="383" width="240"/>
 
                                     </div>
                                 </div>
-                                <!-- end product images -->
+
                                 <div class="product-info">
                                     <h1>Dược Xã Hội</h1>
                                     <div class="rating__and__review">
@@ -541,11 +531,9 @@
             </div>
             <!-- END Modal -->
         </div>
-        <!-- END QUICKVIEW PRODUCT -->
+  \
 		</div>
-		<!-- //Main wrapper -->
-
-		<!-- JS Files -->
+\
 		<script src="js/vendor/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -553,10 +541,12 @@
 <script>
 	var slideIndex = 1;
 	showPag(slideIndex);
+	// PHANTRANG ngang
 	function  plusPag(n) {
 		showPag(slideIndex += n);
 
 	}
+
 	function  currentPag(n) {
 		showPag(slideIndex = n);
 

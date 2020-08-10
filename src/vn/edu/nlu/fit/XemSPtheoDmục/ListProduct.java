@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.XemSPtheoDmục;
+package vn.edu.nlu.fit.controller;
 
 import vn.edu.nlu.fit.DB.DBConnect;
 
@@ -12,18 +12,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 @WebServlet("/ListProduct")
 public class ListProduct extends HttpServlet {
     //Bước 2 và 5: Gửi yêu cầu đến hệ thống
+    //request là client gửi yêu cầu lên server
+    //response là kết quả từ server trả về cho client
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //getParameter trả về tham số yêu cầu http.Truyền từ jsp sang server
         String type = request.getParameter("type");
         try {
 //Bước 2.1 : Lấy danh mục
             String sql="SELECT id,name FROM producttype";
             PreparedStatement s = DBConnect.getPrepareStatement(sql);
-
             ResultSet rs=s.executeQuery(sql);
+            //setAttribute  gửi dữ liệu sang file jsp
             request.setAttribute("rs",rs);
 
             sql="SELECT id,name FROM listnhaxuatban";
@@ -86,8 +88,6 @@ public class ListProduct extends HttpServlet {
             if(type != null) sql6 += " and type=" + type;
             ResultSet p5= s6.executeQuery(sql6);
             request.setAttribute("p5",p5);
-
-
             request.getRequestDispatcher("shop-grid.jsp").forward(request,response);
 
         } catch (ClassNotFoundException | SQLException e) {
