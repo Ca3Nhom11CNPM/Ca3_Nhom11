@@ -14,8 +14,12 @@ import java.sql.SQLException;
 //chức năng xóa sản phẩm
 @WebServlet("/Xoasanpham")
 public class Xoasanpham extends HttpServlet {
+            //request: client gửi yêu cầu lên server
+            //response: kết quả từ server trả về cho client
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+               //getParameter trả về tham số yêu cầu http.Truyền từ jsp sang server
         String maDanhMuc = request.getParameter("id") == null ? "" : request.getParameter("id").trim();
+  
        Sanpham user1 = new Sanpham(maDanhMuc);
         try {
             String sql = "DELETE FROM  product  WHERE id = ?";
