@@ -16,9 +16,11 @@ public class Updatesp extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-
+     //request: client gửi yêu cầu lên server
+    //response: kết quả từ server trả về cho client
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<String> error = new ArrayList<>();
+         //getParameter trả về tham số yêu cầu http.Truyền từ jsp sang server
         String maDanhMuc = request.getParameter("id") == null ? "" : request.getParameter("id").trim();
         String tenDanhMuc = request.getParameter("name") == null ? "" : request.getParameter("name").trim();
         String type = request.getParameter("type") == null ? "" : request.getParameter("type").trim();
