@@ -14,7 +14,10 @@ import java.sql.SQLException;
 
 @WebServlet("/Chitietsp")
 public class Chitietsp extends HttpServlet {
+        //request: client gửi yêu cầu lên server
+    //response: kết quả từ server trả về cho client
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+         //getParameter trả về tham số yêu cầu http.Truyền từ jsp sang server
         String type = request.getParameter("id");
         try {
             String sql="SELECT id,name, type, price, quatity, img, des, congty, tacgia, ngayxuatban, kichthuoc, nxb, loaibia, sotrang, masp, lower, active FROM product";
