@@ -14,7 +14,10 @@ import java.sql.SQLException;
 // use case quản lý sản phẩm
 @WebServlet("/Listsanpham")
 public class Listsanpham extends HttpServlet {
+     //request: client gửi yêu cầu lên server
+    //response: kết quả từ server trả về cho client
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
         try {
             HttpSession session = request.getSession();
             String  sql= "SELECT id,name,type,price,quatity,img,des,congty,tacgia,ngayxuatban,kichthuoc,nxb,loaibia,sotrang,masp,lower,active FROM product";
