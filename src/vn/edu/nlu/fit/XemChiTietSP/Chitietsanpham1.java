@@ -19,10 +19,10 @@ public class Chitietsanpham1 extends HttpServlet {
         String id = request.getParameter("id");
         try {
 
-            String sql="SELECT id, name FROM producttype";
-            PreparedStatement s = DBConnect.getPrepareStatement(sql);
-            ResultSet rs=s.executeQuery(sql);
-            request.setAttribute("rs",rs);
+//             String sql="SELECT id, name FROM producttype";
+//             PreparedStatement s = DBConnect.getPrepareStatement(sql);
+//             ResultSet rs=s.executeQuery(sql);
+//             request.setAttribute("rs",rs);
 
 
                //lấy thông tin chi tiết sản phẩm
