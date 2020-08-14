@@ -186,7 +186,7 @@
         					</div>
         				</div>
         				<div class="tab__container">
-							<!-- Bước 6: Hiển thị danh mục sách -->
+							<!-- Bước 6: Hiển thị thông tin sách -->
 <%--						<!--	Xem sản phẩm theo chiều ngang--%>
 	        				<div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
 								<ul class="myPages ">

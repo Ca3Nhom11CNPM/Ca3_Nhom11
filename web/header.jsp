@@ -101,15 +101,14 @@
 
                         <li class="drop with--one--item "><a href="<%= Util.fullPath("ListProductTrangchu")%>">Trang chủ</a></li>
 
-                        <!-- Bước 3: Hiển thị danh mục sách -->
+                        <!--Bước 1. Chọn danh mục sách trên thanh header của trang chủ-->
                         <li class="drop "><a href="<%= Util.fullPath("ListProduct")%>">Danh mục sách</a>
+
                             <div class="megamenu mega03">
+                        <!-- Bước 3.Hiển thị các loại danh mục-->
                                 <ul class="item item03">
                                     <li class="title">Sách đáng chú ý</li>
                                     <%
-
-                                        String sql1 = "SELECT id,name FROM producttype WHERE active=1;";
-                                        PreparedStatement s1 = DBConnect.getPrepareStatement(sql1);
                                         ResultSet rs1 =s1.executeQuery(sql1);
                                         while (rs1.next()){
                                     %>
@@ -120,9 +119,6 @@
                                 <ul class="item item03">
                                     <li class="title">Sách tuổi teen</li>
                                     <%
-
-                                        String sql2 = "SELECT id,name FROM producttype WHERE active=2";
-                                        PreparedStatement s2 = DBConnect.getPrepareStatement(sql2);
                                         ResultSet rs2 =s2.executeQuery(sql2);
                                         while (rs2.next()){
                                     %>
@@ -132,9 +128,6 @@
                                 <ul class="item item03">
                                     <li class="title">Sách thiếu nhi</li>
                                     <%
-
-                                        String sql3 = "SELECT id,name FROM producttype WHERE active=3";
-                                        PreparedStatement s3 = DBConnect.getPrepareStatement(sql3);
                                         ResultSet rs3 =s3.executeQuery(sql3);
                                         while (rs3.next()){
                                     %>
