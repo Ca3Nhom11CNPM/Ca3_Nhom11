@@ -14,24 +14,13 @@ import java.sql.SQLException;
 
 @WebServlet("/ListProduct")
 public class ListProduct extends HttpServlet {
-    //Bước 2 và 5: Gửi yêu cầu đến hệ thống
+    //Bước 5.Hệ thống goi phương thức doGet()
     //request là client gửi yêu cầu lên server
     //response là kết quả từ server trả về cho client
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //getParameter trả về tham số yêu cầu http.Truyền từ jsp sang server
         String type = request.getParameter("type");
         try {
-//Bước 2.1 : Lấy danh mục
-            String sql="SELECT id,name FROM producttype";
-            PreparedStatement s = DBConnect.getPrepareStatement(sql);
-            ResultSet rs=s.executeQuery(sql);
-            //setAttribute  gửi dữ liệu sang file jsp
-            request.setAttribute("rs",rs);
-
-            sql="SELECT id,name FROM listnhaxuatban";
-            PreparedStatement s7 = DBConnect.getPrepareStatement(sql);
-            ResultSet r=s7.executeQuery(sql);
-            request.setAttribute("r",r);
 
 //Bước 5.1:Lấy thông tin sách
             String sql1= "SELECT id,name,price,img FROM product WHERE active=1";
@@ -40,21 +29,6 @@ public class ListProduct extends HttpServlet {
             ResultSet p= s1.executeQuery(sql1);
             request.setAttribute("p",p);
 
-
-//             sql1 = "SELECT id,name FROM producttype WHERE active=1";
-//            PreparedStatement a = DBConnect.getPrepareStatement(sql1);
-//            ResultSet rs1=a.executeQuery(sql1);
-//            request.setAttribute("rs1",rs1);
-//
-//            sql1 = "SELECT id,name FROM producttype WHERE active=2";
-//            PreparedStatement a1 = DBConnect.getPrepareStatement(sql1);
-//            ResultSet rs2=a1.executeQuery(sql1);
-//            request.setAttribute("rs2",rs2);
-//
-//            sql1 = "SELECT id,name FROM producttype WHERE active=3";
-//            PreparedStatement a2 = DBConnect.getPrepareStatement(sql1);
-//            ResultSet rs3=a2.executeQuery(sql1);
-//            request.setAttribute("rs3",rs3);
 
             String sql2= "SELECT id,name,price,img FROM product WHERE active=2";
             PreparedStatement s2 = DBConnect.getPrepareStatement(sql);
